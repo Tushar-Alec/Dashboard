@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-   
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr  3fr;
-    grid-template-rows: 1fr 3fr;
+    
 }
 
 nav {
@@ -25,6 +24,7 @@ nav {
     align-items: center;
     gap: 12px;
     margin: 8px;
+    
     
 }
 header {
@@ -44,4 +44,9 @@ header {
 }
 .search-bar {
     justify-items: center;
+}
+.main-grid {
+    display: grid;
+    grid-column: 2;
+    background-color: aqua;
 }
