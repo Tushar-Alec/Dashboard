@@ -33,6 +33,7 @@ nav {
   margin: 20px;
   align-items: center;
   cursor: pointer;
+  border-bottom: 1px solid white;
 }
 .menu svg {
   height: 25px;
@@ -62,15 +63,15 @@ a {
 header {
   background-color: white;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .search-icon {
   width: 35px;
 }
 .search-input {
-  width: 850px;
-  height: 20px;
-  border-radius: 40px;
+  width: 750px;
+  height: 15px;
+  border-radius: 25px;
   padding: 8px;
   outline: none;
   border: none;
@@ -94,8 +95,8 @@ header {
   border-bottom: 1px solid white;
 }
 .bell-logo {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 svg {
   cursor: pointer;
@@ -110,8 +111,8 @@ svg {
 .github-logo {
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   fill: purple;
 }
 
@@ -119,5 +120,44 @@ svg {
   transform: rotate(360deg);
 }
 .profile-name {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.goblin {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.name {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  gap: 10px;
+  font-size: 16px;
+}
+.action-btns {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
   font-size: 25px;
+}
+.ActionButton {
+  padding:  8px 23px;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.myname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#myname {
+  font-size: 26px;
+  font-weight: 100;
 }
