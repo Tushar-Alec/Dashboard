@@ -12,7 +12,7 @@
 }
 
 nav {
-  background-color: #f87171;
+  background-color: rgb(253, 93, 35);
   color: white;
   display: grid;
   grid-row: 1 / span 2;
@@ -26,16 +26,30 @@ nav {
 .dashboard {
   display: flex;
   gap: 12px;
-  margin: 10px;
+  margin: 20px;
   align-items: center;
+  cursor: pointer;
+}
+.menu svg {
+  height: 25px;
+  width: 25px;
+  margin-right: 12px;
+  fill: white;
 }
 .menu {
   display: grid;
+  margin: 5px;
 }
 .menu ul {
   text-align: start;
   padding: 20px;
   list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .menu li {
   padding: 6px;
@@ -59,6 +73,5 @@ header {
 }
 .main-grid {
   display: grid;
-
   background-color: #a3a3a3;
 }
