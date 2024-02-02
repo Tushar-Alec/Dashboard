@@ -16,7 +16,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-.container {
+.container { 
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 150px auto;
@@ -67,7 +67,14 @@ a {
   align-items: center;
 }
 .menu li {
-  padding: 6px;
+  padding: 10px;
+}
+li:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+li:hover svg {
+  fill: var(--main-color);
 }
 
 header {
@@ -153,17 +160,22 @@ svg {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 15px;
+  gap: 20px;
   font-size: 25px;
 }
 .ActionButton {
   padding: 8px 23px;
   background-color: var(--main-color);
+  border: 1px solid var(--main-color);
   color: white;
   cursor: pointer;
   border-radius: 8px;
   outline: none;
-  border: none;
+}
+.ActionButton:hover {
+ background-color: white;
+ color: var(--main-color);
+ border: 1px solid var(--main-color);
 }
 .myname {
   display: flex;
@@ -177,7 +189,7 @@ svg {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   background-color: gainsboro;
 }
 .projects {
@@ -205,5 +217,24 @@ svg {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
   transition: all 0.2s ease-in-out;
-  height: 300px;
+  width: 380px;
+  height: 250px;
+  border-radius: 5px;
+  justify-self: center;
+  
+}
+/* .project-title {
+  grid-column: -2;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+} */
+
+#card-img {
+  width: 350px;
+  height: 230px;
+}
+#card-img:hover {
+  
 }
