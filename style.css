@@ -1,22 +1,32 @@
 :root {
-  --main-color: rgb(253, 93, 35);
+  --main-color: #f6461a;
+}
+
+.container > div {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
-
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 150px auto;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 
 nav {
-  background-color: rgb(253, 93, 35);
+  background-color: var(--main-color);
   color: white;
   display: grid;
   grid-row: 1 / span 2;
@@ -66,7 +76,9 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 .search-icon {
-  width: 35px;
+  width: 25px;
+  position: absolute;
+  right: 10px;
 }
 .search-input {
   width: 750px;
@@ -81,14 +93,11 @@ header {
 .search-bar {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 15px;
+  position: relative;
 }
 .name {
   grid-row: 2;
-}
-.main-grid {
-  display: grid;
-  background-color: gainsboro;
 }
 
 #primery-links {
@@ -97,13 +106,17 @@ header {
 .bell-logo {
   width: 25px;
   height: 25px;
+  fill: var(--main-color);
+}
+.bell-logo:hover {
+  transform: scale(1.2);
 }
 svg {
   cursor: pointer;
 }
 .user {
   display: flex;
- align-items: center;
+  align-items: center;
   justify-content: center;
   gap: 18px;
   grid-column: 2;
@@ -133,7 +146,7 @@ svg {
   display: flex;
   align-items: center;
   margin-left: 100px;
-  gap: 10px;
+  gap: 18px;
   font-size: 16px;
 }
 .action-btns {
@@ -144,7 +157,7 @@ svg {
   font-size: 25px;
 }
 .ActionButton {
-  padding:  8px 23px;
+  padding: 8px 23px;
   background-color: var(--main-color);
   color: white;
   cursor: pointer;
@@ -160,4 +173,37 @@ svg {
 #myname {
   font-size: 26px;
   font-weight: 100;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: gainsboro;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-row: 1/3;
+  gap: 10px;
+  margin: 10px;
+}
+.announcements {
+  border: 1px solid var(--main-color);
+  margin: 10px;
+  display: grid;
+}
+.trendings {
+  border: 1px solid var(--main-color);
+  margin: 10px;
+  display: grid;
+  grid-column: 2;
+}
+.card {
+  border: 1px solid var(--main-color);
+  gap: 5px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+  transition: all 0.2s ease-in-out;
+  height: 300px;
 }
