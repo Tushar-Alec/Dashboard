@@ -281,6 +281,28 @@ footer {
   margin: 8px;
   border-bottom: 1px solid purple;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  margin: 12px;
+}
+.trend-items-text {
+ text-align: left;
+ font-size: 20px;
+}
+.trend-items-text h6 {
+  font-size: large;
+}
+
+.trend-items-text span {
+  color: #7f7a7a;
+}
+
+.trend-items svg {
+  width: 65px;
+  display: flex;
+  justify-self: start;
 }
 
 h3 {
