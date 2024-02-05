@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   display: grid;
+  overflow: hidden;
 }
 
 * {
@@ -87,6 +88,12 @@ header {
   background-color: rgb(219, 208, 194);
   display: grid;
   grid-template-columns: repeat(2, minmax(250px,  1fr));
+  height: 140px;
+}
+.scroll-div {
+  overflow-y: auto;
+  height: 100vh;
+  grid-row:  1 / span 2;
 }
 .search-icon {
   width: 25px;
@@ -220,6 +227,12 @@ svg {
   display: flex;
   align-items: stretch;
   grid-template-rows: auto 12px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: purple;
 }
 .card-color {
   background-color: var(--main-color);
@@ -232,12 +245,6 @@ svg {
   height: 70%;
   align-self: center;
   margin-left: 15px;
-}
-
-footer {
-  padding: 20px;
-  background-color: rgb(219, 208, 194);
-  grid-column: 1/3;
 }
 
 .announcements {
@@ -256,7 +263,7 @@ footer {
   padding: 5px;
   margin: 8px;
   border-radius: 10px;
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid #7f7a7a;
 }
 
 .trendings {
@@ -274,7 +281,7 @@ footer {
 .trend-items {
   padding: 5px;
   margin: 8px;
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid #7f7a7a;
   border-radius: 10px;
   display: flex;
   align-items: center;
