@@ -17,9 +17,9 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-.container { 
+.container {
   display: grid;
-  grid-template-columns: 1fr repeat(1, minmax(250px, 4fr));
+  grid-template-columns: 1.2fr 4fr;
   grid-template-rows: 150px auto;
   text-align: center;
   min-height: 100vh;
@@ -32,11 +32,14 @@ nav {
   display: grid;
   grid-row: 1 / span 2;
   font-size: 25px;
-  grid-template-rows: 100px 500px;
+  grid-template-rows: 150px 500px;
 }
 .logo {
   width: 50px;
+  min-width: 25px;
   height: 50px;
+  min-height: 25px;
+
 }
 .dashboard {
   color: white;
@@ -176,9 +179,9 @@ svg {
   outline: none;
 }
 .ActionButton:hover {
- background-color: white;
- color: var(--main-color);
- border: 1px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 .myname {
   display: flex;
@@ -199,23 +202,13 @@ svg {
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px , 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row: 1/3;
   gap: 25px;
   margin: 18px;
   background-color: white;
 }
-.announcements {
-  margin: 10px;
-  background-color: white;
-  display: grid;
-}
-.trendings {
-  margin: 10px;
-  display: grid;
-  grid-column: 2;
-  background-color: white;
-}
+
 .card {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
@@ -228,40 +221,26 @@ svg {
   grid-template-rows: auto 12px;
 }
 .card-color {
-  background-color:var(--main-color) ;
+  background-color: var(--main-color);
   width: 8px;
   border-radius: 5px 0 0 5px;
 }
-.pro-name {
-  position: absolute;
-  margin-left: 140px;
-  font-size: 24px;
-  color: purple;
-  justify-self: center;
-}
 
-#card-img {
-  width: 280px;
-  height: 200px;
-  margin: 16px;
-  padding: 18px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-#card-img:hover {
-  transform: scale(1.04);
-}
 footer {
   padding: 20px;
   background-color: rgb(219, 208, 194);
-  grid-column: 1/3 ;
+  grid-column: 1/3;
 }
 
 .announcements {
   display: grid;
-  grid-template-columns: minmax(50px , auto);
+  grid-template-columns: minmax(50px, auto);
+  grid-column: 2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
+  margin: 10px;
+  background-color: white;
+  display: grid;
 }
 .ann-items {
   padding: 5px;
@@ -272,9 +251,12 @@ footer {
 
 .trendings {
   display: grid;
-  grid-template-columns: minmax(50px , auto);
+  grid-template-columns: minmax(50px, auto);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
+  margin: 10px;
+  grid-column: 2;
+  background-color: white;
 }
 .trend-items {
   padding: 5px;
@@ -288,8 +270,8 @@ footer {
   margin: 12px;
 }
 .trend-items-text {
- text-align: left;
- font-size: 20px;
+  text-align: left;
+  font-size: 20px;
 }
 .trend-items-text h6 {
   font-size: large;
