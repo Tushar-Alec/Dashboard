@@ -303,6 +303,7 @@ footer {
   width: 65px;
   display: flex;
   justify-self: start;
+  fill: teal;
 }
 
 h3 {
