@@ -227,6 +227,13 @@ svg {
   border-radius: 5px 0 0 5px;
 }
 
+.card img {
+  width:  90%;
+  height: 70%;
+  align-self: center;
+  margin-left: 15px;
+}
+
 footer {
   padding: 20px;
   background-color: rgb(219, 208, 194);
