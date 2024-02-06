@@ -20,7 +20,7 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns:minmax(270px, 1fr) repeat(1, minmax(250px, 4fr));
+  grid-template-columns: minmax(270px, 1fr) repeat(1, minmax(250px, 4fr));
   grid-template-rows: 150px auto;
   text-align: center;
   min-height: 100vh;
@@ -41,7 +41,6 @@ nav {
   min-width: 25px;
   height: 50px;
   min-height: 25px;
-
 }
 .dashboard {
   color: white;
@@ -87,13 +86,13 @@ li:hover svg {
 header {
   background-color: rgb(219, 208, 194);
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px,  1fr));
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
   height: 150px;
 }
 .scroll-div {
   overflow-y: auto;
   height: 100vh;
-  grid-row:  1 / span 2;
+  grid-row: 1 / span 2;
 }
 .search-icon {
   width: 25px;
@@ -245,10 +244,11 @@ svg {
 }
 
 .card img {
-  width:  90%;
+  width: 90%;
   height: 70%;
   align-self: center;
   margin-left: 15px;
+  border-radius: 8px;
 }
 
 .announcements {
@@ -259,12 +259,12 @@ svg {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
   margin: 15px;
   background-color: white;
-  overflow-y: auto; 
-  max-height: 600px; 
+  overflow-y: auto;
+  max-height: 600px;
 }
 .ann-items p {
- text-align: left;
- margin: 2px;
+  text-align: left;
+  margin: 2px;
 }
 
 .ann-items {
@@ -286,7 +286,7 @@ svg {
   grid-column: 2;
   grid-row: 2;
   background-color: white;
-  overflow-y: auto; 
+  overflow-y: auto;
   max-height: 600px;
 }
 .trend-items {
