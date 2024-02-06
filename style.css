@@ -232,11 +232,32 @@ svg {
   grid-template-rows: auto 12px;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  position: relative;
+}
+.card-icons {
+  position: absolute;
+  bottom: 12px; 
+  right: 30px; 
+  display: flex;
+  gap: 20px;
+}
+#pro-name {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  font-size: 20px;
+  line-height: 36px;
+  color: black;
+}
+.card-icons svg {
+  width: 20px;
+  color: black;
+  cursor: pointer;
 }
 
-.card:hover {
-  background-color: purple;
+.card-icons svg:hover {
+  fill: var(--main-color); 
 }
+
 .card-color {
   background-color: var(--main-color);
   width: 8px;
