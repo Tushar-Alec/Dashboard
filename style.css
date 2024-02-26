@@ -5,11 +5,14 @@
 :root.light {
   --color-header-text: black;
   --color-header-bg: gray;
+  --color-body-bg: white;
 }
 
 :root.dark {
   --color-header-text: white;
-  --color-header-bg: rgb(36, 36, 36);
+  --color-header-bg: rgb(0, 0, 0);
+  --color-body-bg: black;
+  
 }
 
 [data-theme="light"] {
@@ -24,8 +27,9 @@
 
 .theme-toggle {
   width: 40px;
-  fill: black;
+  fill: var(--color-header-text);
 }
+
 .theme-toggle:hover {
   cursor: pointer;
 }
@@ -115,6 +119,8 @@ header {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   height: 150px;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
 }
 .scroll-div {
   overflow-y: auto;
@@ -232,7 +238,7 @@ svg {
   display: grid;
   grid-template-columns: 2.4fr 1fr;
   grid-template-rows: 500px 1fr;
-  background-color: white;
+  background-color: var(--color-body-bg);
   gap: 10px;
 }
 .main-grid a {
