@@ -7,7 +7,7 @@
   --color-header-bg: rgb(168, 161, 161);
   --color-body-bg: white;
   --color-nav-text: white;
-  --color-box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
+  --color-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 22px;
 }
 
 :root.dark {
@@ -15,7 +15,7 @@
   --color-header-bg:rgb(36, 36, 36) ;
   --color-body-bg: black;
   --color-nav-text: black;
-  --color-box-shadow: gray 4px 6px 12px;
+  --color-box-shadow: gray  0px 8px 22px;
 }
 
 [data-theme="light"] {
@@ -315,7 +315,7 @@ svg {
   grid-template-columns: minmax(160px, auto);
   grid-column: 2;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
+  box-shadow: var(--color-box-shadow);
   margin: 15px;
   background-color: white;
   overflow-y: auto;
@@ -340,7 +340,7 @@ svg {
   display: grid;
   grid-template-columns: minmax(100px, auto);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 26px;
+  box-shadow: var(--color-box-shadow);
   margin: 15px;
   grid-column: 2;
   grid-row: 2;
