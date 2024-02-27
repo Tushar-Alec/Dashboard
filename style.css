@@ -22,12 +22,14 @@
   --color-header-text: black;
   --color-header-bg: rgb(168, 161, 161);
   --color-body-bg: white;
+  --color-box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 22px;
 }
 
 [data-theme="dark"] {
   --color-header-text: white;
   --color-header-bg: rgb(36, 36, 36);
   --color-body-bg: black;
+  --color-box-shadow: gray  0px 8px 22px;
 }
 
 .theme-toggle {
